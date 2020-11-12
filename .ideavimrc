@@ -1,0 +1,35 @@
+noremap yy "+yy
+vnoremap y "+y
+
+nnoremap dd "+dd
+vnoremap d "+d
+
+nnoremap p "+p
+vnoremap p "+p
+nnoremap P "+P
+vnoremap P "+P
+set clipboard+=unnamed
+
+
+set nu rnu
+set surround
+
+map <Space>xm      :action SearchEverywhere<CR>
+map <Space>ci      :action CommentByLineComment<CR>
+map <Space>fs      :action SaveAll<CR>
+map <Space>ff      :action FindInPath<CR>
+map <Space>ss      :action Find<CR>
+map <Space>fp      :action CopyPaths<CR>
+map <Space>rr      :action RecentFiles<CR>
+map <Space>gf      :action GotoFile<CR>
+map <Space>gs      :action GotoSymbol<CR>
+map <Space>gc      :action GotoClass<CR>
+map <Space><Space> :action GotoAction<CR>
+map <Space>q       :action Exit<CR>
+map <Space>wh      :action HideAllWindows<CR>
+map <Space>fu      :action ShowUsages<CR>
+map <Space>rf      :action ReformatCode<CR>
+map <space>oi      :action OptimizeImports<CR>
+
+nnoremap <Space>gg            :action GenerateGetterAndSetter<CR>
+nmap     <Space>tt            :action FileStructurePopup<CR>
