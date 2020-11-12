@@ -1,0 +1,7 @@
+*.DS_Store
+.isolated-storage/*
+xbuild/*
+configstore/*
+clash/*
+stetic/*
+NuGet/*
